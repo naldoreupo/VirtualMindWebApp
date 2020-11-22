@@ -1,0 +1,24 @@
+
+<form class="example-form">
+
+  <mat-form-field class="example-full-width">
+      <mat-label>CurrencyCode</mat-label>
+      <input matInput placeholder="Currency Code" value="USD"  [(ngModel)]="currencyCode" name="currencyCode">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>User Id</mat-label>
+      <input matInput placeholder="User id" value=""  [(ngModel)]="userId" name="userId">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Amount</mat-label>
+      <input matInput placeholder="Amount" value=""  [(ngModel)]="amount" name="amount">
+    </mat-form-field>
+
+    <mat-label>{{ purchase | json }}</mat-label>
+
+  </form>
+
+
+<button mat-raised-button color="primary" (click)="SavePurchase()" >Purchase!</button>
